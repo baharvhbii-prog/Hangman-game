@@ -12,7 +12,7 @@ const RIGHT_LEG = (
   <div className="w-23 h-2  absolute top-51 -right-20 bg-black rotate-32"></div>
 );
 const LEFT_LEG = (
-  <div className="w-23 h-2  absolute top-51 -right-0.5 bg-black -rotate-32"></div>
+  <div className="w-23 h-2  absolute top-51.5 -right-0.5 bg-black -rotate-32"></div>
 );
 const HngmanDrawing = () => {
   return (
