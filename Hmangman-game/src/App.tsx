@@ -10,7 +10,7 @@ function App() {
   console.log(wordToGuess);
   const [guessLtters, setGuessLtters] = useState<string[]>([]);
   return (
-    <div className="max-w-200 flex flex-col gap-8 m-auto items-center border">
+    <div className="max-w-200 flex flex-col gap-8 m-auto items-center ">
       <div className="text-2xl text-center">lose win</div>
       <HngmanDrawing />
       <HngmanWord />
