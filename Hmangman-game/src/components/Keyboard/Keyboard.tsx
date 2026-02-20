@@ -1,4 +1,4 @@
-import style from "../../assets/styles/keyboard.module.css"
+import style from "../../assets/styles/keyboard.module.css";
 const KEYS = [
   "a",
   "b",
@@ -27,7 +27,16 @@ const KEYS = [
   "y",
   "z",
 ];
-const Keyboard = () => {
+type KeyboardProps = {
+  activeLetter: string[];
+  inactiveLetters: string[];
+  addGuessedLetter: (letter: string) => void;
+};
+const Keyboard = ({
+  activeLetter,
+  inactiveLetters,
+  addGuessedLetter,
+}: KeyboardProps) => {
   return (
     <div
       style={{
@@ -35,9 +44,13 @@ const Keyboard = () => {
         gridTemplateColumns: "repeat(auto-fit , minmax(75px,1fr))",
         gap: "0.5rem",
       }}
-    >{KEYS.map((key)=>(
-      <button className={`${style.btn} `} key={key}>{key}</button>
-    ))}</div>
+    >
+      {KEYS.map((key) => (
+        <button onClick={()=>addGuessedLetter(key)} className={`${style.btn} `} key={key}>
+          {key}
+        </button>
+      ))}
+    </div>
   );
 };
 
