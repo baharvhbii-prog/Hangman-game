@@ -1,4 +1,4 @@
-Hangman Game –React.js + TypeScript
+#Hangman Game –React.js + TypeScript
 
 A modern Hangman game built with React.js and TypeScript.
 On each page refresh, a random word is generated and the player must guess the word before running out of attempts.
